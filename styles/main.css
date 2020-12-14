@@ -67,3 +67,14 @@
     text-align: justify;
     text-justify: inter-word;
   }
+
+  .certificates {
+    transition: transform .2s;
+    margin: 0 auto;
+  }
+  
+  .certificates:hover {
+    -ms-transform: scale(3); /* IE 9 */
+    -webkit-transform: scale(3); /* Safari 3-8 */
+    transform: scale(3);
+  }
