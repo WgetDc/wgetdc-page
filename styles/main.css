@@ -78,3 +78,49 @@
     -webkit-transform: scale(3); /* Safari 3-8 */
     transform: scale(3);
   }
+
+  .agumon{
+    max-width: 30px;
+    -webkit-animation:myfirst 5s infinite; /* Chrome, Safari, Opera */
+    animation:myfirst 5s;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .cosa img:hover{
+    width: 500px;
+}
+
+
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes myfirst{
+    0%   { left:0px; top:0px;-webkit-transform:rotate(0deg)}
+    50%  {left:100%; margin-left:-100px;-webkit-transform:rotate(360deg)}
+    100% {left:0px; top:0px;-webkit-transform:rotate(0deg)}
+  }
+
+  /* Standard syntax */
+  @keyframes myfirst{
+    0%   { left:0px; top:0px;transform:rotate(0deg)}
+    50%  {left:100%; margin-left:-100px;transform:rotate(360deg)}
+    100% {left:0px; top:0px;transform:rotate(0deg)}
+  }
+
+  .left {
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.right {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+#bee {transition: transform .1s}
