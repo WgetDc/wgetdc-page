@@ -142,7 +142,7 @@
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:active .flip-box-inner {
+.flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
 }
 
