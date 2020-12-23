@@ -196,7 +196,7 @@
       </div>
 
       <div style="width: 50px;" class="cosa" id="bee">
-        <img onmouseover='getAlert(this)' class="agumon" src="assets/img/agumon.gif" alt="">
+        <img onclick='getAlert(this)' class="agumon" src="assets/img/agumon.gif" alt="">
       </div>
 
       
@@ -262,12 +262,14 @@
   
 
   function getAlert(image) {
+    var audio = new Audio('assets/audio/agumon_cry.mp3');
+    audio.play();
     var agumonsays = ["I'm hungry :c","WgetDc is a good Software developer, but not a good Tammer!","Do you want to see me digivolve? Share this website",
     "WgetDc cleans me daily", "If you fork and star some of the WgetDc projects on GitHub, something big can happen to me c;"];
 
     var a = Math.floor(Math.random() * agumonsays.length);
 
-    alert(agumonsays[a])
+    alert(agumonsays[a]);    
 }
 </script>
 
