@@ -2,6 +2,12 @@
     color:white;
     font-family: 'JetBrains Mono', monospace;
 }
+
+.fullstack h4:hover{
+  color: rgb(95, 95, 95);
+  cursor: pointer;
+}
+
 .main{
     background-color: #222;
     padding: 3% 15% 0 15%;
@@ -87,6 +93,8 @@
     right: 0px;
     bottom: 0px;
   }
+
+ 
 
   .cosa img:hover{
     width: 500px;
